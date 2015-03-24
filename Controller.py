@@ -11,9 +11,13 @@ def controller():
     email_from = sys.argv[3]
     email_to = sys.argv[4]
     archive_name = ZipLogFiles(Config("config.json").config).archive_name
-    EmailBuilder(username, password, email_from, email_to) \
-        .add_attachment(archive_name, archive_name).add_subject("Log Files " + get_current_timestamp()).add_body(
-        "Logs as of date - " + get_current_timestamp()).send_email()
+    try:
+        EmailBuilder(username, password, email_from, email_to) \
+            .add_attachment(archive_name, archive_name).add_subject("Log Files " + get_current_timestamp()).add_body(
+            "Logs as of date - " + get_current_timestamp()).send_email()
+    except:
+        e = sys.exc_info()[0]
+        print e
 
 
 if __name__ == "__main__":

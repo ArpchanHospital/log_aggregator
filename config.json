@@ -14,5 +14,9 @@
   {
     "fileName": "bahmni_deploy.log",
     "filePath": "/bahmni_temp/logs/bahmni_deploy.log"
+  },
+  {
+    "fileName": "openerp.log",
+    "filePath": "/var/log/openerp/openerp-server.log"
   }
 ]
