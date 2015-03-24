@@ -13,4 +13,4 @@ class ZipLogFiles:
 
     def add_to_zip(self, log_file):
         if os.path.exists(log_file.file_path):
-            self.log_file_archive.write(log_file.file_path)
+            self.log_file_archive.write(log_file.file_path, compress_type=zipfile.ZIP_DEFLATED)
