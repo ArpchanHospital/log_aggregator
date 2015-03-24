@@ -1,0 +1,18 @@
+[
+  {
+    "fileName": "go-agent.log",
+    "filePath": "/var/log/go-agent/go-agent.log"
+  },
+  {
+    "fileName": "go-server.log",
+    "filePath": "/var/log/go-server/go-server.log"
+  },
+  {
+    "fileName": "catalina.out",
+    "filePath": "/home/bahmni/apache-tomcat-8.0.12/logs/catalina.out"
+  },
+  {
+    "fileName": "bahmni_deploy.log",
+    "filePath": "/bahmni_temp/logs/bahmni_deploy.log"
+  }
+]
